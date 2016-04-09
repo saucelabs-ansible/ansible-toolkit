@@ -1,8 +1,8 @@
 import tempfile
 import unittest
 
-from ansible_toolkit import git_diff
-from ansible_toolkit.exceptions import MalformedGitDiff
+from saucelabs_ansible.toolkit import git_diff
+from saucelabs_ansible.toolkit.exceptions import MalformedGitDiff
 
 
 VAULT_PASSWORD = "foo"
