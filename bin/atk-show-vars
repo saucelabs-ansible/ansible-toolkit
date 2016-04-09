@@ -3,7 +3,7 @@
 import argparse
 import sys
 
-from ansible_toolkit.show_vars import show_vars
+from saucelabs_ansible.toolkit.show_vars import show_vars
 
 
 if __name__ == '__main__':

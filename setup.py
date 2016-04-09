@@ -5,12 +5,12 @@ import pip.download
 
 from pip.req import parse_requirements
 
-from setuptools import setup
+from setuptools import find_packages, setup
 
-setup(name='ansible-toolkit',
+setup(name='saucelabs_ansible.toolkit',
       version='1.3.2',
       description='The missing Ansible tools',
-      url='http://github.com/dellis23/ansible-toolkit',
+      url='http://github.com/saucelabs-ansible/toolkit',
       author='Daniel Ellis',
       author_email='ellisd23@gmail.com',
       license='GPLv3',
@@ -22,7 +22,9 @@ setup(name='ansible-toolkit',
           str(pkg.req) for pkg in parse_requirements(
                   'test-requirements.txt',
                   session=pip.download.PipSession())],
-      packages=['ansible_toolkit'],
+      namespace_packages=('saucelabs_ansible',),
+      packages=find_packages(exclude=(
+          '*.tests', '*.tests.*', 'tests.*', 'tests', 'saucelabs_ansible')),
       scripts=[
           'bin/atk-git-diff',
           'bin/atk-show-vars',

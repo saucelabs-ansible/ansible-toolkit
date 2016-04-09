@@ -3,7 +3,7 @@
 import argparse
 import sys
 
-from ansible_toolkit import vault
+from saucelabs_ansible.toolkit import vault
 
 
 if __name__ == '__main__':

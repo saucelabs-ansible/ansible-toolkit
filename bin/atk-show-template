@@ -2,7 +2,7 @@
 
 import argparse
 
-from ansible_toolkit.show_template import show_template
+from saucelabs_ansible.toolkit.show_template import show_template
 
 
 if __name__ == '__main__':
