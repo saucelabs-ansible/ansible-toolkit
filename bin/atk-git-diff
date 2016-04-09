@@ -1,8 +1,8 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import argparse
 import subprocess
-import sys
 
 from saucelabs_ansible.toolkit.git_diff import show_unencrypted_diffs
 

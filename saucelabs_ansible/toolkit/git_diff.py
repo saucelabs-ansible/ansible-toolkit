@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import difflib
 from itertools import islice
 import re
