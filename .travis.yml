@@ -25,3 +25,12 @@ after_success:
   - pylint ansible_toolkit
   - pip install coveralls
   - coveralls
+
+deploy:
+  provider: pypi
+  user: steenzout_saucelabs
+  password:
+    secure: REGA7B33mNlYL5Xgt0JKf9X1+2x0cf/ICRI4UsCjG1lv+yHDnlcMZ1283UvWW1cgDTDAeI/kF2ySTMwTgYcKSFr+zZ6/SLEPpDh5R8t7TfiuvvVLXJQECc1r+bPwJbYrnt1pie12lclHkSnqW6MpCYhxaZV0yLfMkwaPV4LmXYmvjnU6DYoR09t2QjxWr3Od0V2N40c9u5u3xnhwFBIu8+5G2XKUlbmgi8Wfa+vfAVgtlrLr5BPjJdbCSL2yYgy0/nuBlQv651fyFAoPdLxyM6Rqr1M8zZ5VAyLz14ryZ2elOdjkcFfmkxdqq/djFjsf3kVkqUxHNbwtarZCCqfbYpkEaRQsdlIbhZTCeJmoajgrlG5FBcbYp4S8tQQS969FD2JlQRDShCbDngm+04aAZKrV/2j8/iy47xUUQ03f94ULPE3P6zs9T4SE6TxrbcgAJuA7CzyreJ8BskA22bBdHXNrcYa2y13OPmMraj/m3qPcMX1So48QhqR+h1DDp1XVnUagBoJoSqcvCNGmDnFjBCQgowAPz5W9ebn2UBCwYFdzV5seFA+56ErO5CW9RbpeODLmF5CEO9p4q9mrhEchwouR6g0Z1uta4SogFv0O3rpc9DlqIh0BJy//hHs+36kOqQewEzyO8AzxMMBf00nzLCVDKXpGbozLWtOFzRvsIlA=
+  on:
+    tags: true
+    branch: master
