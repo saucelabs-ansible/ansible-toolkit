@@ -3,6 +3,8 @@ Ansible Toolkit
 
 [![Build Status](https://travis-ci.org/saucelabs-ansible/toolkit.svg?branch=master)](https://travis-ci.org/saucelabs-ansible/toolkit)
 
+This package is a fork from the original [dellis23](https://github.com/dellis23)/[ansible-toolkit]((https://github.com/dellis23/ansible-toolkit).
+
 Description
 -----------
 
@@ -18,7 +20,7 @@ Setup
 
 Just pip install it.
 
-    pip install ansible-toolkit
+    pip install saucelabs_ansible.toolkit
 
 ### Configuration ###
 
