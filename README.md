@@ -1,6 +1,8 @@
 Ansible Toolkit
 ===============
 
+[![Build Status](https://travis-ci.org/saucelabs-ansible/toolkit.svg?branch=master)](https://travis-ci.org/saucelabs-ansible/toolkit)
+
 Description
 -----------
 
